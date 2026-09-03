@@ -1,0 +1,11 @@
+ClrHome
+Prompt N
+1->A
+For(F,2,√(N))
+WHile fPart(N/F2)=0
+AxF->A
+N/F2->N
+End
+End
+Disp "OUTSIDE:",A
+Disp "INSIDE:",N
