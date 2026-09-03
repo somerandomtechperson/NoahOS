@@ -1,4 +1,70 @@
-Clr Graph
-Clr Draw
-Clr Home
+Lbl 10
+ClrHome
+Disp "ENTER PASSWORD"
+Input P
+If P=1234
+Then
+Goto 1
+Else
+ClrHome
+Disp "NUH-UH!"
+For(I,1,500):End
+Goto 10
+End
+Lbl 1
+ClrHome
+Disp "LOADING OS..."
+For(I,1,16)
+Output(3,I,".")
+For(T,1,150:End
+End
+ClrHome
+ClrDraw
+FnOff
+PlotsOff
+RecalPic 1
+For(T,1,150):End
+Text(57,18,"WELCOME TO NOAHOS"
+For(T,1,500):End
+ClrHome
+Lbl Y
+Menu(" NOAHOS ",".SCREENSAVER", A,".BLACKJACK",B,".QUAD",C,".ABOUT",K,"QUIT-X",Q,".POKER",E,"NEXT",F)
+Lbl A
+prgmmSTARS
+Goto 1
+Lbl B
+prgmBLACKJACK
+Goto 1
+Lbl C
+prgmQUAD
+Goto 1
+Lbl K
+prgmABOUT
+Goto 1
+Lbl Q
+ClrHome
+Output(3,4,"THANK YOU")
+Output(4,4,"FOR USING")
+Output(5,5,"NOAHOS.")
+For(I,1,100000)
+End
+Lbl E
+prgmPOKER
+Goto 1
+Lbl F
+Menu(" NOAHOS ",".SNAKE",G,".RADSIMP",H,".STARWARS",J,".INFO",K,"BACK",I)
+Lbl G
+prgmSNAKE
+Goto 1
+Lbl H
+prgmRADSIMP
+Goto 1
+Lbl I
+Goto Y
+Lbl J
+prgmSTARINTR
+Goto 1
+Lbl K
+prgmABOUT
+Goto 1
 End
