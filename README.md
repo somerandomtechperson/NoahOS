@@ -1,5 +1,5 @@
 # NoahOS
-A simple operating system run on a TI-83 Plus calculator. Not an actual OS, but runs in the PRGM files of the system. This lightweight operating system is the foundation for many applications, formula solvers, and games for your TI-83 Plus calculator.
+A simple operating system run on a TI-83 Plus calculator. Not an actual OS, but runs in the PRGM files of the system. This lightweight operating system is the foundation for many applications, formula solvers, and games for your TI-83 Plus calculator. Uses TI-BASIC as a coding language.
 
 # Step 1
 Download the TI Connect app from the official TI website: https://education.ti.com/en/software/details/en/B59F6C83468C4574ABFEE93D2BC3F807/swticonnectsoftware
