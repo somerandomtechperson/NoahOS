@@ -1,0 +1,64 @@
+ClrHome
+0->S
+3->L
+0->T
+8->X
+4->Y
+2->D
+DelVar L1
+DelVar L2
+1->dim(L1)
+1->dim(L2)
+
+randInt(2,12)->F
+randInt(2,7)->G
+Output(G,F,"x")
+Output(1,13,S)
+
+While 1
+getKey->K
+If K=25:1->D
+If K=26:2->D
+If K=34:3->D
+If K=24:4->D
+
+If D=1:Y-1->Y
+If D=2:X+1->X
+If D=3:Y+1->Y
+If D=4:X-1->X
+
+If X<1 or X>16 or Y<1 or Y>8
+Goto 9
+
+T+1->T
+T->dim(L1)
+T->dim(L2)
+X->L1(T)
+Y->L2(T)
+Output(Y,X,"0")
+
+If X=F and Y=G
+Then S+1->S
+L+1->L
+Output(1,13,S)
+randInt(2,12)->F
+randInt(2,7)->G
+Output(G,F,"x")
+Else
+T-L->E
+If E>0
+Then
+L1 (E)->A
+L2 (E)->B
+If A≥1 and A≤16 and B≥1 and B≤8
+Output(B,A," ")
+End
+End
+
+For(C,1,15):End
+End
+
+Lbl 9
+ClrHome
+Disp "GAME OVER!"
+Disp "SCORE:",S
