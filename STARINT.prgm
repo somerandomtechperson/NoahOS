@@ -1,0 +1,81 @@
+ClrDraw
+FnOff
+AxesOff
+0->A
+Repeat A=100
+A+4->A
+Pt-On(randInt(0,94),randInt(0,62))
+End
+Output(3,1,"A LONG TIME AGO,")
+Output(4,3,"IN A GALAXY")
+Output(5,3,"FAR FAR AWAY")
+For(I,1,700):End
+ClrHome
+Output(3,1,"IT IS A PERIOD")
+Output(4,3,"OF CIVIL WAR.")
+For(I,1,800):End
+ClrHome
+Output(3,1,"REBEL SPACESHIPS")
+Output(4,1,"STRIKING FROM")
+Output(5,1,"A HIDDEN BASE.")
+For(I,1,800):End
+ClrHome
+Output(3,1,"HAVE WON THEIR")
+Output(4,1,"FIRST VICTORY")
+Output(5,1,"AGAINST THE EVIL")
+Output(6,1,"GALACTIC EMPIRE.")
+For(I,1,800):End
+ClrHome
+Output(3,1,"DURING THE BATTLE,")
+Output(4,1,"REBEL SPIES MANAGED")
+Output(5,1,"TO STEAL SECRET")
+Output(6,1,"PLANS TO THE")
+For(I,1,800):End
+ClrHome
+Output(3,1,"EMIPRES ULTIMATE")
+Output(4,1,"WEAPON, THE DEATH STAR.")
+For(I,1,800):End
+ClrHome
+If X=0:1->X
+Menu("STAR WARS","COUNTINUE",1,"RESTART",2)
+Lbl 2
+1->X
+Lbl 1
+ClrHome
+Output(1,6,"PAGE ")
+Output(1,14,X)
+If X=1:Then
+Disp "","A LONG TIME AGO,","IN A GALAXY FAR","FAR AWAY...."
+End
+If X=2:Then
+Disp "","IT IS A PERIOD","OF CIVIL WAR.","REBEL SPACESHI-"
+Disp "PS, STRIKING FROM","A HIDDEN BASE."
+End
+If X=3:Then
+Disp "","HAVE WON THEIR","FIRST VICTORY","AGAINST THE"
+Disp "EVIL GALACTIC","EMPIRE."
+End
+If X=4:Then
+Disp "","DURING THE BATTLE","REBEL SPIES","MANAGED TO"
+Disp "STEAL SECRET","PLANS TO THE"
+End
+If X=5:Then
+Disp "","EMPIRE ULTIMATE","WEAPON, THE","DEATH STAR...."
+End
+If X=6:Then
+Disp "","MAY THE FORCE","BE WITH YOU.","THE END."
+End
+0->K
+Repeat K=24 or K=26 or K=45
+getKey->K
+End
+If K=45:Stop
+If K=24 and X>1
+Then
+X-1->X
+End
+If K=26 and X<6
+Then
+X+1->X
+End
+Goto 1
