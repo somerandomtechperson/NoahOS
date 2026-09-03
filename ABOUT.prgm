@@ -1,0 +1,7 @@
+"TI-83 PLUS"->Str1
+"1.12"->Str2
+"NOAH KIERNAN"->Str3
+Disp "MODEL:",Str1
+Disp "BY:",Str3
+Output(8,1,"SEPT 2026")
+Pause
