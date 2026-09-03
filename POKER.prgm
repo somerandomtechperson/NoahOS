@@ -1,0 +1,65 @@
+100->M
+Lbl G
+ClrHome
+If M≤0
+Then
+Disp "GAME OVER!"
+Stop
+End
+
+Disp "CASH:",M
+Input "YOUR BET?",B
+If B>M or B≤0
+Goto G
+M-B->M
+
+DelVar L1
+5->dim(L1)
+For(C,1,5)
+randInt(1,13)->R
+End
+
+Lbl 1
+ClrHome
+Disp "YOUR HAND:"
+Disp L1
+Input "DISCARD 1-5? (0 TO KEEP)",D
+If D≠0 and D≥1 and D≤5
+Then
+randInt(1,13)->L(D)
+Goto 1
+End
+
+ClrHome
+SortA(L1)
+Disp "FINAL HAND:"
+Disp L1
+
+0->P
+For(C,1,4)
+If L1(C)=L1(C+1)
+P+1->P
+End
+
+If P=0
+Then
+Disp "YOU LOSE."
+End
+If P=1
+Then
+Disp "ONE PAIR!"
+M+Bx2->M
+End
+If P=2
+Then
+Disp "TWO PAIRS OR 3 OF A KIND!"
+M+Bx3->M
+End
+If P=3
+Then
+Disp "FULL HOUSE OR 4 OF A KIND"
+M+Bx5->M
+End
+
+Pause
+Goto G
