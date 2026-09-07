@@ -7,16 +7,16 @@ Then
 Goto 1
 Else
 ClrHome
-Disp "NUH-UH!"
+Disp "TRY AGAIN!"
 For(I,1,500):End
 Goto 10
 End
 Lbl 1
 ClrHome
 Disp "LOADING OS..."
-For(I,1,16)
+For(I,1,1)
 Output(3,I,".")
-For(T,1,150:End
+For(T,1,150):End
 End
 ClrHome
 ClrDraw
@@ -28,7 +28,7 @@ Text(57,18,"WELCOME TO NOAHOS"
 For(T,1,500):End
 ClrHome
 Lbl Y
-Menu(" NOAHOS ",".SCREENSAVER", A,".BLACKJACK",B,".QUAD",C,".ABOUT",K,"QUIT-X",Q,".POKER",E,"NEXT",F)
+Menu(" NOAHOS ",".SCREENSAVER",A,".BLACKJACK",B,".QUAD",C,".ABOUT",K,"QUIT-X",Q,".POKER",E,"NEXT",F)
 Lbl A
 prgmmSTARS
 Goto 1
