@@ -1,0 +1,78 @@
+:ClrDraw
+:FnOff 
+:AxesOff 
+:0→A
+:Repeat A=100
+:A+4→A
+:Pt-On(randInt(0,265),randInt(0,165))
+:End
+:Output(4,5,"A LONG TIME AGO,")
+:Output(5,8,"IN A GALAXY")
+:Output(6,7,"FAR FAR AWAY")
+:For(I,1,7000):End
+:ClrHome
+:Output(4,6,"IT IS A PERIOD")
+:Output(5,7,"OF CIVIL WAR.")
+:For(I,1,8000):End
+:ClrHome
+:Output(4,5,"REBEL SPACESHIPS")
+:Output(5,7,"STRIKING FROM")
+:Output(6,6,"A HIDDEN BASE.")
+:For(I,1,8000):End
+:ClrHome
+:Output(3,7,"HAVE WON THEIR")
+:Output(4,7,"FIRST VICTORY")
+:Output(5,5,"AGAINST THE EVIL")
+:Output(6,5,"GALACTIC EMPIRE.")
+:For(I,1,8000):End
+:ClrHome
+:Output(3,4,"DURING THE BATTLE,")
+:Output(4,4,"REBEL SPIES MANAGED")
+:Output(5,6,"TO STEAL SECRET")
+:Output(6,7,"PLANS TO THE")
+:For(I,1,8000):End
+:ClrHome
+:Output(4,5,"EMPIRE'S ULTIMATE")
+:Output(5,2,"WEAPON, THE DEATH STAR.")
+:For(I,1,8000):End
+:ClrHome
+:If X=0:1→X
+:Menu("STAR WARS","CONTINUE",1,"RESTART",2)
+:Lbl 2
+:1→X
+:Lbl 1
+:ClrHome
+:Output(1,10,"PAGE ")
+:Output(1,15,X)
+:If X=1:Then
+:Disp "","A LONG TIME AGO,","IN A GALAXY FAR","FAR AWAY...."
+:End
+:If X=2:Then
+:Disp "","IT IS A PERIOD","OF CIVIL WAR.","REBEL SPACESHIPS,","STRIKING FROM","A HIDDEN BASE."
+:End
+:If X=3:Then
+:Disp "","HAVE WON THEIR","FIRST VICTORY","AGAINST THE","EVIL GALACTIC","EMPIRE."
+:End
+:If X=4:Then
+:Disp "","DURING THE BATTLE,","REBEL SPIES MANAGED TO","STEAL SECRET PLANS","TO THE"
+:End
+:If X=5:Then
+:Disp "","EMPIRE'S ULTIMATE","WEAPON, THE","DEATH STAR...."
+:End
+:If X=6:Then
+:Disp "","MAY THE FORCE","BE WITH YOU.","THE END."
+:End
+:0→K
+:Repeat K=24 or K=26 or K=45
+:getKey→K
+:End
+:If K=45:Stop
+:If K=24 and X>1
+:Then
+:X-1→X
+:End
+:If K=26 and X<6
+:Then
+:X+1→X
+:End
+:Goto 1
