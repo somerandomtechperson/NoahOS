@@ -1,0 +1,65 @@
+100->M
+Lbl M
+If M≤0
+Then
+Disp "YOU LOSE!"
+Disp "GO TOUCH GRASS"
+100->M
+Pause
+End
+ClrHome
+Disp "CASH:",M
+Lbl B
+Input "BET:",B
+If B>M or B≤0
+Then
+Disp "INVALID BET"
+Goto B
+End
+randInt(1,10)+randInt(1,10)->P
+randInt(1,10)+randInt(1,10)->D
+Lbl G
+ClrHome
+Disp "YOUR TOTAL:",P
+Disp "DEALER SHOWS:",D
+Disp "1:HIT 2:STAY"
+Input "CHOICE:",C
+If C=1
+Then
+P+randInt(1,10)->P
+If P>21
+Then
+ClrHome
+Disp "BUST! TOTAL:",P
+M-B->M
+Pause
+Goto M
+End
+Goto G
+End
+If C=2
+Then
+Lbl D
+If D<17
+Then
+D+randInt(1,10)->D
+Goto D
+End
+ClrHome
+Disp "YOU:",P,"DEALER:",D
+If D>21 or P>D
+Then
+Disp "YOU WIN!"
+M+B->M
+Else
+If P=D
+Then
+Disp "PUSH/TIE"
+Else
+Disp "DEALER WINS!"
+M-B->M
+End
+End
+Pause
+Goto M
+End
