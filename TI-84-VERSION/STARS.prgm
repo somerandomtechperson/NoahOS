@@ -1,0 +1,26 @@
+:ClrHome
+:Disp "--------------------------"
+:Output(3,10,"LOADING")
+:For(I,1,3000):End
+:ClrHome
+:Disp "LOADING"
+:For(F,2,25)
+:Output(4,F,">")
+:For(D,1,200):End
+:End
+:ClrDraw
+:AxesOff
+:0→Xmin
+:318→Xmax
+:0→Ymin
+:212→Ymax
+:While 1
+:randInt(1,318)→A
+:randInt(1,212)→B
+:randInt(1,318)→C
+:randInt(1,212)→D
+:Pt-On(A,B)
+:Pt-On(C,D)
+:For(I,1,50):End
+:Pt-Off(A,B)
+:End
