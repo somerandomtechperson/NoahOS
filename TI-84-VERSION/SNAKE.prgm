@@ -1,0 +1,82 @@
+:ClrHome
+:0→S
+:3→L
+:0→T
+:13→X
+:6→Y
+:2→D
+:DelVar L1
+:DelVar L2
+:1→dim(L1)
+:1→dim(L2)
+:Repeat C=0
+:0→C
+:randInt(1,26)→F
+:randInt(2,10)→G
+:If T>0
+:Then
+:For(I,max(1,T-L+1),T)
+:If F=L1(I) and G=L2(I)
+:1→C
+:End
+:End
+:End
+:Output(G,F,"x")
+:Output(1,1,"SCORE:")
+:Output(1,8,S)
+:While 1
+:getKey→K
+:If K=25:1→D
+:If K=26:2→D
+:If K=34:3→D
+:If K=24:4→D
+:If D=1:Y-1→Y
+:If D=2:X+1→X
+:If D=3:Y+1→Y
+:If D=4:X-1→X
+:If X<1 or X>26 or Y<2 or Y>10
+:Goto 9
+:T+1→T
+:T→dim(L1)
+:T→dim(L2)
+:X→L1(T)
+:Y→L2(T)
+:If T>L
+:Then
+:For(I,T-L+1,T-1)
+:If X=L1(I) and Y=L2(I)
+:Goto 9
+:End
+:End
+:Output(Y,X,"0")
+:If X=F and Y=G
+:Then
+:S+1→S
+:L+1→L
+:Output(1,8,S)
+:Repeat C=0
+:0→C
+:randInt(1,26)→F
+:randInt(2,10)→G
+:For(I,max(1,T-L+1),T)
+:If F=L1(I) and G=L2(I)
+:1→C
+:End
+:End
+:Output(G,F,"x")
+:Else
+:T-L→E
+:If E>0
+:Then
+:L1(E)→A
+:L2(E)→B
+:If A≥1 and A≤26 and B≥2 and B≤10
+:Output(B,A," ")
+:End
+:End
+:For(C,1,250):End
+:End
+:Lbl 9
+:ClrHome
+:Disp "GAME OVER!"
+:Disp "SCORE:",S
