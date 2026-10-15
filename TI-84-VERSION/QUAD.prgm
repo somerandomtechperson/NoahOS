@@ -1,0 +1,6 @@
+Prompt A,B,C
+(B²-4*A*C)→D
+(-B+√(D))/(2*A)→R
+(-B-√(D))/(2*A)→T
+Disp "X=",R
+Disp "X=",T
