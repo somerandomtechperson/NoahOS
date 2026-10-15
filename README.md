@@ -1,5 +1,7 @@
 # NoahOS
-A simple operating system run on a TI-series calculator. Not an actual OS, but runs in the PRGM files of the system. This lightweight operating system is the foundation for many applications, formula solvers, and games for your TI-83 Plus calculator. Uses TI-BASIC as a coding language.
+A simple operating system that runs on a TI-series calculator. Not an actual OS, but runs in the PRGM files of the system. This lightweight operating system is the foundation for many applications, formula solvers, and games for your TI-series calculator. It uses TI-BASIC as a coding language.
+
+**NOTE** This program has not yet been tested on a TI-84 Plus CE calculator. The files are there because they have been converted to work on a TI-84. They have not been tested yet. If you try it on your own TI-84 Plus CE, please reach out and let us know in the discussions tab. Thanks for using NoahOS!
 
 # Step 1
 Download the TI Connect app from the official TI website: https://education.ti.com/en/software/details/en/B59F6C83468C4574ABFEE93D2BC3F807/swticonnectsoftware
@@ -22,5 +24,5 @@ If you would like to exit NoahOS and return to the normal TI calculator software
 Then press ENTER, and then CLEAR to exit.
 # Notes
 **THIS IS EXPERIMENTAL AND NOT FINISHED YET**
-Some files may be missing, damaged, or not completed, as this is a *project in progress*. Please excuse errors or wrong applications in your NoahOS main menu.
+Some files may be missing, damaged, or not completed, as this is a *project in progress*. Please excuse errors or incorrect applications in your NoahOS main menu.
 Thank you for your support and use of the NoahOS system!
