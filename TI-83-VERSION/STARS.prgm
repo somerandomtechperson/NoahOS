@@ -1,0 +1,27 @@
+ClrHome
+Disp "---------------"
+Output(3,3,"LOADING")
+For(I,1,500)
+End
+ClrHome
+Disp "LOADING"
+For(F,2,15)
+Output(4,F,">")
+For(D,1,30)
+End
+End
+ClrDraw
+AxesOff
+0->Xmin
+94->Xmax
+0->Ymin
+62->Ymax
+While 1
+randInt(1,94)->A
+randInt(1,62)->B
+randInt(1,94)->C
+randInt(1,62)->D
+Pt-On(A,B)
+Pt-On(C,D)
+Pt-Off(A,B)
+End
