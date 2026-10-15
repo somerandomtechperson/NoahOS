@@ -1,8 +1,9 @@
 # NoahOS
 A simple operating system that runs on a TI-series calculator. Not an actual OS, but runs in the PRGM files of the system. This lightweight operating system is the foundation for many applications, formula solvers, and games for your TI-series calculator. It uses TI-BASIC as a coding language.
 
-**NOTE** This program has not yet been tested on a TI-84 Plus CE calculator. The files are there because they have been converted to work on a TI-84. They have not been tested yet. If you try it on your own TI-84 Plus CE, please reach out and let us know in the discussions tab. Thanks for using NoahOS!
+**NOTE** This program has not yet been tested on a TI-84 Plus CE calculator. The files are included because they were converted to work on a TI-84. They have not been tested yet. If you try it on your own TI-84 Plus CE, please reach out in the Discussions tab and let us know. Thanks for using NoahOS!
 
+# STEPS FOR TI-83 PLUS INSTALLATION - SCROLL TO THE BOTTOM FOR TI-84 PLUS CE STEPS
 # Step 1
 Download the TI Connect app from the official TI website: https://education.ti.com/en/software/details/en/B59F6C83468C4574ABFEE93D2BC3F807/swticonnectsoftware
 Then download all the .prgm files from the repository.
@@ -22,6 +23,24 @@ This is normal and means the code has stopped running.
 Press CLEAR or select QUIT from the options to exit.
 If you would like to exit NoahOS and return to the normal TI calculator software, use the arrow keys in the main NoahOS menu until you see QUIT.
 Then press ENTER, and then CLEAR to exit.
+
+# STEPS FOR TI-84 PLUS CE INSTALLATION
+
+# Step 1
+Download all the .prgm files in the TI-84-VERSION directory.
+Then, download the OS84-NOIMAGES.base file from the directory.
+
+# Step 2
+Grab your calculator, connect it to your computer, and transfer all the files into your PRGM.
+Once it is done, disconnect and turn on your calculator
+
+# Step 3
+Press the PRGM button, and scroll down until you see OS.
+Press ENTER when highlighted over OS.
+The program will now ask you for a password; enter 1234, and then hit the ENTER button. You can change this password later in the EDIT section in the PRGM files.
+Now you're in NoahOS! Follow the rest of the steps for the TI-83 Plus on how to use the programs.
+Thanks for using NoahOS!
+
 # Notes
 **THIS IS EXPERIMENTAL AND NOT FINISHED YET**
 Some files may be missing, damaged, or not completed, as this is a *project in progress*. Please excuse errors or incorrect applications in your NoahOS main menu.
