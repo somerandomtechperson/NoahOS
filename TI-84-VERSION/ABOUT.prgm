@@ -1,0 +1,7 @@
+"TI-84 PLUS CE"→Str1
+"1.12"→Str2
+"NOAHYAKANOAH"→Str3
+Disp "MODEL:",Str1
+Disp "BY:",Str3
+Output(10,1,"OCT 2026")
+Pause
