@@ -1,3 +1,4 @@
+"Loading assets output
 ClrHome
 Disp "---------------"
 Output(3,3,"LOADING")
@@ -10,6 +11,7 @@ Output(4,F,">")
 For(D,1,30)
 End
 End
+"Clears graph and sets stage
 ClrDraw
 AxesOff
 0->Xmin
@@ -17,10 +19,12 @@ AxesOff
 0->Ymin
 62->Ymax
 While 1
+"Random cords generated
 randInt(1,94)->A
 randInt(1,62)->B
 randInt(1,94)->C
 randInt(1,62)->D
+"Plots those generated points
 Pt-On(A,B)
 Pt-On(C,D)
 Pt-Off(A,B)
