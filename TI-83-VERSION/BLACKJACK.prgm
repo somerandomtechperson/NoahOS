@@ -1,5 +1,6 @@
 100->M
 Lbl M
+"Checks for no money
 If M≤0
 Then
 Disp "YOU LOSE!"
@@ -10,6 +11,7 @@ End
 ClrHome
 Disp "CASH:",M
 Lbl B
+"Asks for input
 Input "BET:",B
 If B>M or B≤0
 Then
@@ -20,6 +22,7 @@ randInt(1,10)+randInt(1,10)->P
 randInt(1,10)+randInt(1,10)->D
 Lbl G
 ClrHome
+"UI code
 Disp "YOUR TOTAL:",P
 Disp "DEALER SHOWS:",D
 Disp "1:HIT 2:STAY"
@@ -47,6 +50,7 @@ Goto D
 End
 ClrHome
 Disp "YOU:",P,"DEALER:",D
+"Code for win or lose output
 If D>21 or P>D
 Then
 Disp "YOU WIN!"
