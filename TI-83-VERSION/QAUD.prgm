@@ -1,5 +1,7 @@
+"Asks for inputs
 Prompt A,B,C
 (B2-4AC)->D
 (-B+√(D))/(2A)->R
 (-B+√(D))/(2A)->T
+"Displays output
 Disp R,T
