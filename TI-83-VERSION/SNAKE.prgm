@@ -21,6 +21,7 @@
 :End
 :End
 :End
+:"UI output
 :Output(G,F,"x")
 :Output(1,13,S)
 :While 1
@@ -69,6 +70,7 @@
 :Then
 :L1(E)→A
 :L2(E)→B
+:"Win and lose output
 :If A≥1 and A≤16 and B≥1 and B≤8
 :Output(B,A," ")
 :End
