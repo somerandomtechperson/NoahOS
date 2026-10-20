@@ -1,12 +1,13 @@
 100->M
 Lbl G
 ClrHome
+"Checks for no money
 If M≤0
 Then
 Disp "GAME OVER!"
 Stop
 End
-
+"Displays UI
 Disp "CASH:",M
 Input "YOUR BET?",B
 If B>M or B≤0
@@ -34,17 +35,18 @@ ClrHome
 SortA(L1)
 Disp "FINAL HAND:"
 Disp L1
-
+"Checks for pairs
 0->P
 For(C,1,4)
 If L1(C)=L1(C+1)
 P+1->P
 End
-
+"Lose output
 If P=0
 Then
 Disp "YOU LOSE."
 End
+"Pairs output and code
 If P=1
 Then
 Disp "ONE PAIR!"
