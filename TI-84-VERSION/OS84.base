@@ -38,7 +38,7 @@ Goto 1
 Lbl C
 prgmQUAD
 Goto 1
-Lbl K
+Lbl M
 prgmABOUT
 Goto 1
 Lbl Q
@@ -51,7 +51,7 @@ Lbl E
 prgmPOKER
 Goto 1
 Lbl F
-Menu(" NOAHOS ",".SNAKE",G,".RADSIMP",H,".STARWARS",J,".INFO",K,"BACK",I)
+Menu(" NOAHOS ",".SNAKE",G,".RADSIMP",H,".STARWARS",J,".INFO",M,"BACK",I)
 Lbl G
 prgmSNAKE
 Goto 1
